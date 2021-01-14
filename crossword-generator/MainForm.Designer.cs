@@ -44,6 +44,7 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.пользователиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -143,14 +144,15 @@
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // настройкиToolStripMenuItem
             // 
             this.настройкиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.категорииИСловаToolStripMenuItem});
+            this.категорииИСловаToolStripMenuItem,
+            this.пользователиToolStripMenuItem});
             this.настройкиToolStripMenuItem.Name = "настройкиToolStripMenuItem";
             this.настройкиToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.настройкиToolStripMenuItem.Text = "Настройки";
@@ -158,7 +160,7 @@
             // категорииИСловаToolStripMenuItem
             // 
             this.категорииИСловаToolStripMenuItem.Name = "категорииИСловаToolStripMenuItem";
-            this.категорииИСловаToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.категорииИСловаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.категорииИСловаToolStripMenuItem.Text = "Категории и слова";
             this.категорииИСловаToolStripMenuItem.Click += new System.EventHandler(this.категорииИСловаToolStripMenuItem_Click);
             // 
@@ -209,6 +211,13 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Макс. кол-во слов";
             // 
+            // пользователиToolStripMenuItem
+            // 
+            this.пользователиToolStripMenuItem.Name = "пользователиToolStripMenuItem";
+            this.пользователиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.пользователиToolStripMenuItem.Text = "Пользователи";
+            this.пользователиToolStripMenuItem.Click += new System.EventHandler(this.пользователиToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +266,7 @@
         public System.Windows.Forms.ListBox listBoxCat;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem пользователиToolStripMenuItem;
     }
 }
 

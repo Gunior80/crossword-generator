@@ -106,6 +106,9 @@ namespace crossword_generator
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            LoginForm LForm = new LoginForm(this.db, this);
+            LForm.Show();
+            this.Enabled = false;
             listBoxCat.Items.Clear();
             foreach (Category cat in db.GetCategories())
             {
@@ -121,6 +124,12 @@ namespace crossword_generator
                             MessageBoxIcon.Information,
                             MessageBoxDefaultButton.Button1,
                             MessageBoxOptions.DefaultDesktopOnly);
+        }
+
+        private void пользователиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserForm UForm = new UserForm(this.db);
+            UForm.Show();
         }
     }
 }

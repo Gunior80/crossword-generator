@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace crossword_generator
 {
-    class Word
+    public class Word
     {
         string word;
         int length;
@@ -44,7 +44,7 @@ namespace crossword_generator
         }
     }
 
-    class Generator
+    public class Generator
     {
         bool IntToBool(int digit)
         {
